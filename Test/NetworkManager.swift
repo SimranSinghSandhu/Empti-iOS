@@ -51,13 +51,6 @@ class NetworkManager {
     
     func getShopDetails(token: String, completion: @escaping(Result<ShopModal, Error>) -> ()) {
         
-//        let parameters = [
-//          [
-//            "key": "outlet_id",
-//            "value": "86",
-//            "type": "text"
-//          ]
-//
         let parameters = ["outlet_id": "86"]
        
         var request = URLRequest(url: URL(string: "https://empti.org/empti/public/api/user/outletDetail")!,timeoutInterval: Double.infinity)
